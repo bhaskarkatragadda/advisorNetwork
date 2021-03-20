@@ -129,7 +129,7 @@ router.get('/:userId/advisor/booking', async (req,res) => {
                    bookingId:element._id,
                    bookingTime:element.bookingTime
                };
-               arr.push(bookingObj);
+               Bookings.push(bookingObj);
             })
             return res.status(200).json({
                 Bookings
